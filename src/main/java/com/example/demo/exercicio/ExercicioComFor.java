@@ -1,4 +1,4 @@
-package com.example.demo.exercicioComUsoDeFor;
+package com.example.demo.exercicio;
 
 
 
