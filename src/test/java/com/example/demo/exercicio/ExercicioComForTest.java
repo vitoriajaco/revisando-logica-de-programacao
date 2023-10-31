@@ -24,14 +24,25 @@ class ExercicioComForTest {
 
     @Test
     public void validaSeNNaoAtendeACondicaoTest() throws IOException {
-        Mockito.when(bufferedReader.readLine()).thenReturn("1");
+        Mockito.when(bufferedReader.readLine()).thenReturn("21");
+        boolean result =  ExercicioComFor.validaSeNAtentendeCondicao(bufferedReader);
+        Assertions.assertEquals(true, result);
+
+    }
+    @Test
+    public void validaSeNAtendeACondicaoComNumeroNegativoTest() throws IOException {
+        Mockito.when(bufferedReader.readLine()).thenReturn("-20");
         boolean result =  ExercicioComFor.validaSeNAtentendeCondicao(bufferedReader);
         Assertions.assertEquals(true, result);
 
     }
 
 
+
 }
+
+
+
 
 
 
